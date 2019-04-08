@@ -1,0 +1,141 @@
+@model Category
+
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Portfolio</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            body{
+                 background:linear-gradient(370deg, #022d41,#1aa6b7);
+
+                height:900px;
+            }
+
+            #container{
+                width:900px;
+                padding:50px;
+                background:linear-gradient(370deg,ghostwhite,whitesmoke);
+         
+                margin-top:20px;
+                border-radius:8px;
+                /* box-shadow: 5px 14px 27px 19px lightpink inset; */
+                
+            }
+           
+            a{
+                color:#daecf3;
+            }
+            #nav{
+                color:white;
+            }
+
+
+            span{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            .sub{
+                /* box-shadow: -1px -3px 27px 5px rgb(189, 189, 189) inset; */
+                border-radius:8px;
+                border:1px solid black;
+                min-width:150px;
+                max-width: 200px;
+                text-align: left;
+                color:black;
+                padding:10px;
+                margin:5px;
+            }
+
+            h1{
+                display:inline-block;
+            
+            }
+            #nav a{
+                margin-left:655px;
+            }
+            .divider{
+                border-left:2px solid black;
+                height:600px;
+            }
+            .topDiv{
+               border-left:2px solid black; 
+               min-height: 40px;
+               margin:20px 0px 10px 0px;
+            }
+            h4{
+                margin-bottom:3px;
+            }
+            textarea{
+                resize:vertical;
+            }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#feed").click(function(){
+                $("#full").load("demo_test.txt");
+            });
+        });
+        </script>
+    </head>
+    <body>
+<div class="container-fluid text-center"> 
+
+    </div>
+        <div class="row content">
+             <div class="col-sm-2 text-right">
+            </div>
+                    <div class="col-sm-3 text-right"> 
+            <h1><a href="/products">Products</a></h1>
+            </div>
+            <div class="col-sm-1 text-center"> 
+            </div>
+            <div class="col-sm-1 text-center topDiv">        
+            </div>
+            <div class="col-sm-3 text-left"> 
+                <h1>Categories</h1>
+            </div>
+            <div class="col-sm-2 text-left"> 
+            </div>
+        </div>
+ <br>
+        <div class="row content">
+             <div class="col-sm-1 text-right"> 
+            </div>
+            <div class="col-sm-4 text-center"> 
+                <h3>New Categories</h3><br>
+                
+                <form asp-action="CreateCategory" asp-controller="Home">
+                <div class="form-group text-left">
+                    <span asp-validation-for="Name"></span>
+                    <label><h4>Name: </h4></label>
+                    <input asp-for="Name" class="form-control"><br>
+
+                    <button type="submit" class="btn btn-secondary center-block">Create</button>
+                </div>
+                </form> 
+            </div>
+            <div class="col-sm-1 text-center"> 
+            </div>
+            <div class="col-sm-1 text-center divider">        
+            </div>
+            <div class="col-sm-4 text-center"> 
+                <h3>Existing Categories</h3><br>
+                @{
+                    foreach (var cats in @ViewBag.Categories)
+                    {
+                        <h4><a href="/categories/@cats.CategoryId">@cats.Name</a></h4>
+                    }
+                }
+            </div>
+            <div class="col-sm-1 text-left"> 
+            </div>
+        </div>
+
+    </body>
+
+</html>

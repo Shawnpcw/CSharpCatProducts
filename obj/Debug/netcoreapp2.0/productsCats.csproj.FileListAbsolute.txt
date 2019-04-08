@@ -1,0 +1,11 @@
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\bin\Debug\netcoreapp2.0\productsCats.deps.json
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\bin\Debug\netcoreapp2.0\productsCats.runtimeconfig.json
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\bin\Debug\netcoreapp2.0\productsCats.runtimeconfig.dev.json
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\bin\Debug\netcoreapp2.0\productsCats.dll
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\bin\Debug\netcoreapp2.0\productsCats.pdb
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.csprojResolveAssemblyReference.cache
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.csproj.CoreCompileInputs.cache
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.AssemblyInfoInputs.cache
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.AssemblyInfo.cs
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.dll
+C:\Users\littl\Documents\Caitlin\Coding Dojo\C#\productsCats\obj\Debug\netcoreapp2.0\productsCats.pdb
